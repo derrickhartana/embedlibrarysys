@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Perpustakaan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 7 -->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css">
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #073763;
+  color: #ffffff;
+}
+
+/* SECTION */
+.services {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/* FLEX GRID */
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: stretch; /* tinggi sama */
+}
+
+/* CARD */
+.card {
+  flex: 0 0 calc(33.333% - 22px);
+  background: rgba(255,255,255,0.08);
+  padding: 24px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: left;
+
+  display: flex;          /* penting */
+  flex-direction: column; /* konten vertikal */
+  height: 100%;
+
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.12);
+}
+
+/* ICON */
+.card i {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.card p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========================= */
+/* RESPONSIVE ala Google Sites */
+/* ========================= */
+
+/* Tablet → 2 kolom */
+@media (max-width: 900px) {
+  .card {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+/* Mobile → 1 kolom */
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+    padding: 20px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+<section class="services">
+  <div class="service-grid">
+
+    <a href="https://sites.google.com/guru.sma.belajar.id/librarysystemtest/buku" class="card" target="_blank">
+      <i class="fa-regular fa-books"></i>
+      <h3>Koleksi Buku</h3>
+      <p>Ribuan buku fisik dan digital dalam berbagai kategori</p>
+    </a>
+
+    <a href="https://sites.google.com/guru.sma.belajar.id/librarysystemtest/pinjam" class="card" target="_blank">
+      <i class="fa-regular fa-arrows-rotate"></i>
+      <h3>Peminjaman</h3>
+      <p>Layanan peminjaman buku yang mudah dan cepat</p>
+    </a>
+
+    <a href="https://sites.google.com/guru.sma.belajar.id/librarysystemtest/e-book" class="card" target="_blank">
+      <i class="fa-regular fa-tablet-screen"></i>
+      <h3>E-Book dan Flipbook</h3>
+      <p>Kumpulan karya digital siswa dan koleksi e-book interaktif</p>
+    </a>
+
+    <a href="https://sites.google.com/guru.sma.belajar.id/librarysystemtest/bookverse" class="card" target="_blank">
+      <i class="fa-regular fa-book-open-reader"></i>
+      <h3>BookVerse</h3>
+      <p>Klub literasi yang dapat meningkatkan minat baca siswa-siswi sekolah</p>
+    </a>
+
+    <a href="https://sites.google.com/guru.sma.belajar.id/librarysystemtest/absensi" class="card" target="_blank">
+      <i class="fa-regular fa-clipboard-user"></i>
+      <h3>Absensi Kunjungan</h3>
+      <p>Pencatatan kunjungan perpustakaan digital Tunas Bangsa</p>
+    </a>
+
+    <a href="https://sites.google.com/guru.sma.belajar.id/librarysystemtest/kontak" class="card" target="_blank">
+      <i class="fa-regular fa-envelope"></i>
+      <h3>Bantuan dan Kontak</h3>
+      <p>Hubungi koordinator perpustakaan atau member BookVerse</p>
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>
