@@ -55,6 +55,16 @@ body {
 
   transition: transform 0.25s ease, background 0.25s ease;
 }
+    
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;     /* Firefox */
+  overflow-y: scroll;        /* Optional: ensures scrolling functionality is kept */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera, and most modern browsers */
+}
 
 .card:hover {
   transform: translateY(-6px);
